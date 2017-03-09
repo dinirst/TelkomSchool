@@ -74,6 +74,11 @@ public class Login extends javax.swing.JFrame {
         jButton1.setBounds(40, 240, 70, 30);
 
         jButton2.setText("Exit");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2);
         jButton2.setBounds(150, 240, 70, 30);
 
@@ -88,7 +93,7 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(pass);
         pass.setBounds(120, 170, 160, 30);
 
-        pack();
+        setBounds(0, 0, 416, 339);
     }// </editor-fold>//GEN-END:initComponents
 
     private void unameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unameActionPerformed
@@ -133,6 +138,11 @@ public class Login extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "gagal");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
